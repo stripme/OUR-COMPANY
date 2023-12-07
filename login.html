@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>KPR RUMAH OUR COMPANY</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+    
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      
+    />
+  </head>
+
+  <body>
+    
+    
+    
+    
+    <style>
+      
+  
+
+      
+      body{
+        background-color: rgb(247, 204, 139);
+        border-radius: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-attachment: fixed;
+        overflow: hidden;
+      }
+      .container{
+        max-width: 1000px;
+        padding: 0px;
+        margin:  200px auto;
+        
+
+      }
+      .title{
+        height: 90px;
+        background-color: blanchedalmond;
+        border-radius: 5px 5px 0 0;
+        color: rgb(59, 163, 233);
+        font-size: 18px;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+        .btn-lanjutkan {
+        padding: 5px;
+        width: 100%;
+        border-radius: 10px;
+        background: #FAEBD7;
+        }
+      .bg-section {
+        width: 100%;
+        height: 100vh;
+        z-index: -99;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+      }
+
+      .bg-image {
+        width: 849px;
+        height: 620px;
+        background-position: right;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      
+      
+
+      .card {
+        text-align: center;
+      }
+
+      .card-body {
+        text-align: left;
+        background-color: blanchedalmond;
+        border-radius: 20px 20px;
+       
+
+      }
+      
+      .icon-google {
+        float: left;
+        cursor: pointer;
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+      }
+      .errorMessage{
+        color: red;
+      }
+    
+      .center-logo img {
+        float: center;
+        display: block;
+        margin: 0 auto;
+        background-color: blanchedalmond;
+      }
+      .mb-3{
+       display: block;
+
+       
+      
+       
+       
+}
+    
+    </style>
+
+    <section >
+      <div class="bg-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <div class="card" style="border-radius: 15px">
+                
+
+                <div class="card-body">
+                  
+                  <center>
+                  <img
+                    src="../tugas kelompok/assets/img/logo.png"
+                    alt="logo"
+                    width="200px"
+                    height="120px"
+                    class="logo"
+                  />
+                </center>
+                <div class="title">
+                  <center>
+                <p>
+                 Dapatkan Pengalaman Di Our Company
+                </p>
+              </center>
+              </div>
+                 
+                  
+                  <div class="input">
+
+                   
+                    
+                      
+                      <form action="login.php" method="post" >
+                        
+                        
+                    
+                  
+                
+                    <div class="mb-3">
+                      <label for="email" class=""
+                        >Alamat Email :</label
+                      >
+                      
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        aria-describedby="name"
+                        placeholder="Masukan Email Anda"
+                      />
+                      </div>
+                      <div class="mb-3">
+
+                      <label for="password" class=""
+                        >Password :</label
+                      >
+                     
+                      <input type="password" id="password" class="form-control"  name="password" placeholder="Masukan Password"  value="" >
+                      <span class="show-hide">
+                        <i class="fa fa-eye"></i>
+                      </div>
+                      
+                     
+                     
+                      
+                      
+                      <br />
+                      
+                      
+                      <button type="submit" class="btn-lanjutkan margin-left : 160px" >LOGIN</button>
+                      <div class="button">
+                        <p>Belum Punya Akun?
+                            <a href="register.html">Registerasi</a>
+                        </p>
+                    </div>
+                    
+                    </div>
+                    
+                  </form>
+
+                  
+                    
+                  
+                  
+                  <div id="errorMessage" class="errorMessage"></div>
+                  <script>
+                  function validateForm() {
+                    var email = document.getElementById('email').value;
+                    var password = document.getElementById('password').value;
+                   
+                    if (email === '' || password === '') {
+                        document.getElementById('errorMessage').innerHTML='silahkan isi semua kolom login.';
+                        return false;
+
+                    } else {
+                        document.getElementById('errorMessage').innerHTML='';
+                      return false;                    }
+                }
+              </script>
+              </div>
+            
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+  <footer>
+    <!-- Footer -->
+    <p>
+      Saya setuju untuk OUR COMPANY's Persyaratan Layanan dan Kebijakan Privasi
+      termasuk pengumpulan, penggunaan, dan pengungkapan informasi pribadi saya.
+    </p>
+  </footer>
+</html>
